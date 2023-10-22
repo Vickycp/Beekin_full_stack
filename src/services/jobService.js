@@ -9,10 +9,10 @@ const jobService = {
     return jobPresenter.getJobs();
   },
 
-  getReleventJob: async (experience, skill) => {
+  getRelevantJob: async (experience, skill) => {
     try {
       const skills = skill.split(',').map(skill => skill.trim());
-      // console.log('Skills:', skills, 'Experience:', experience);wor
+      console.log('Skills:', skills, 'Experience:', experience);
   
       const results = await jobPresenter.getReleventMatch(experience, skills);
       

@@ -9,7 +9,7 @@ const userApiEndpoints = require('./src/views/userApiEndpoints');
 // Initialize Express app
 const app = express();
 app.use(bodyParser.json());
-
+app.use(express.json());
 app.use(cors());
 
 // MongoDB Connection

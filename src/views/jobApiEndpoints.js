@@ -4,6 +4,7 @@ const basicAuth = require('basic-auth');
 const router = express.Router();
 const userService = require('../services/userService');
 const jobService = require('../services/jobService');
+const { validationResult, body ,query} = require('express-validator');
 
 // Basic Authentication Middleware
 const auth = (req, res, next) => {
@@ -27,42 +28,77 @@ const auth = (req, res, next) => {
 };
 
 
+router.get(
+  '/listofjobs',
+  [
+    query('page').optional().isInt({ min: 1 }).withMessage('Invalid page number.'),
+    query('pageSize').optional().isInt({ min: 1, max: 100 }).withMessage('Invalid page size.'),
+  ],
+  auth,
+  (req, res) => {
+    const errors = validationResult(req);
 
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
 
+    const { page = 1, pageSize = 10 } = req.query;
 
-router.post('/job', auth, (req, res) => {
-  // 
-});
+    jobService
+      .getJobs(page, pageSize)
+      .then((jobs) => res.status(200).json(jobs))
+      .catch(() => res.status(500).send('Error fetching jobs.'));
+  }
+);
 
-router.get('/listofjobs', auth, (req, res) => {
-   jobService
-   .getJobs()
-   .then((jobs) => res.status(200).json(jobs))
-   .catch(() => res.status(500).send('Error fetching jobs.'));
-});
+router.post(
+  '/relatedJobs',
+  [
+    body('experience').isInt({ min: 0 }).withMessage('Experience must be a non-negative integer.'),
+    body('skill').not().isEmpty().withMessage('Skill is required.'),
+  ],
+  auth,
+  (req, res) => {
+    const errors = validationResult(req);
 
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
 
-router.get('/relatedJobs',auth,(req,res)=>{
+    const { experience, skill } = req.body;
 
-  const{experince,skill} = req.body;
+    jobService
+      .getRelevantJob(experience, skill)
+      .then((jobResult) => {
+        return res.status(jobResult.http_code).json(jobResult);
+      })
+      .catch(() => res.status(500).send('Error fetching jobs.'));
+  }
+);
 
-  // console.log("***experience:"+experince);
-   
- return jobService.getReleventJob(experince,skill)
- .then((jobResult) =>{ 
-  return res.status(jobResult.http_code).json(jobResult)})
- .catch(() => res.status(500).send('Error fetching jobs.'));
+router.post(
+  '/jobApply',
+  [
+    body('jobid').isMongoId().withMessage('Invalid job ID format.'),
+    body('userid').isMongoId().withMessage('Invalid user ID format.'),
+  ],
+  auth,
+  (req, res) => {
+    const errors = validationResult(req);
 
-})
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
 
-router.post('/jobApply',auth,(req,res)=>{
+    const { jobid, userid } = req.body;
 
-   const {jobid,userid}= req.body;
-  jobService.applyFindedJobs(jobid,userid)
-  .then((jobResult) =>{ 
-    return res.status(jobResult.http_code).json(jobResult)})
-   .catch(() => res.status(500).send('Error while applying.'));
-  
-})
+    jobService
+      .applyFindedJobs(jobid, userid)
+      .then((jobResult) => {
+        return res.status(jobResult.http_code).json(jobResult);
+      })
+      .catch(() => res.status(500).send('Error while applying.'));
+  }
+);
 
 module.exports = router;

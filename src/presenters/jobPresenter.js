@@ -13,8 +13,14 @@ const jobPresenter = {
   },
 
   getReleventMatch:async (experience,skills)=> {
-    return await Job.collection.find({ req_experience: experience, // Jobs with exactly 7 years of experience
-     req_skills: { $exists: skills} }).toArray().catch(()=>"not found");
+    const regexSkills = skills.map(skill => new RegExp(skill, 'i'));
+    return await Job.collection.find({  $or: [
+      { $and: [{ req_experience: experience }, { req_skills: { $in: regexSkills } }] },
+      { req_experience: experience }
+    ]}).sort({
+      req_experience: 1,
+      req_skills: 1
+    }).toArray().catch(()=>"not found");
   },
    
   getApplicationByJobId:async(jobId)=>{
