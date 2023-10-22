@@ -2,12 +2,15 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const cors = require('cors'); 
 const jobApiEndpoints = require('./src/views/jobApiEndpoints');
 const userApiEndpoints = require('./src/views/userApiEndpoints');
 
 // Initialize Express app
 const app = express();
 app.use(bodyParser.json());
+
+app.use(cors());
 
 // MongoDB Connection
 mongoose.connect('mongodb://localhost:27017/jobportal', {
