@@ -41,4 +41,13 @@ router.get('/listofjobs', auth, (req, res) => {
    .catch(() => res.status(500).send('Error fetching jobs.'));
 });
 
+
+router.get('/relatedJobs',auth,(req,res)=>{
+
+  const{experince,skill} = req.body;
+   
+ return jobService.getReleventJob(experince,skill);
+
+})
+
 module.exports = router;

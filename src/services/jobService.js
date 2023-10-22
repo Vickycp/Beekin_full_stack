@@ -8,6 +8,12 @@ const jobService = {
   getJobs: () => {
     return jobPresenter.getJobs();
   },
+
+  getReleventJob:(experince,skill)=>{
+      const skills= skill.split(',').map(skill => skill.trim());
+      return jobPresenter.getReleventMatch(experince,skills);git 
+
+  },
 };
 
 module.exports = jobService;
