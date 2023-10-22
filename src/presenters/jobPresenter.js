@@ -10,11 +10,9 @@ const jobPresenter = {
     return Job.find().exec();
   },
 
-  getReleventMatch:(experience,skills)=>{
-    Job.find({
-      req_experience: experience, // Jobs with exactly 7 years of experience
-      req_skills: { $all: skills } // Jobs with all specified skills (Java and SQL)
-  }).then((result)=>result).catch(()=>"not found");
+  getReleventMatch:async (experience,skills)=> {
+    return await Job.collection.find({ req_experience: experience, // Jobs with exactly 7 years of experience
+     req_skills: { $exists: skills} }).toArray().catch(()=>"not found");
   }
 };
 

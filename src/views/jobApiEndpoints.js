@@ -45,8 +45,13 @@ router.get('/listofjobs', auth, (req, res) => {
 router.get('/relatedJobs',auth,(req,res)=>{
 
   const{experince,skill} = req.body;
+
+  // console.log("***experience:"+experince);
    
- return jobService.getReleventJob(experince,skill);
+ return jobService.getReleventJob(experince,skill)
+ .then((jobResult) =>{ 
+  return res.status(jobResult.http_code).json(jobResult)})
+ .catch(() => res.status(500).send('Error fetching jobs.'));
 
 })
 

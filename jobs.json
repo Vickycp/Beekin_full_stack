@@ -68,5 +68,264 @@
         "desc": "We are looking for a QA engineer to develop and execute exploratory and automated tests to ensure product quality. The QA engineer role plays an important part in our company’s product development process.",
         "req_experience": 5,
         "req_skills": ["Java", "Python", "Google Cloud", "MySQL", "Selenium"]
+    },
+    {
+        "job_id": "fgh123",
+        "job_title": "Software Engineer",
+        "desc": "We are seeking a software engineer to design, develop, and maintain software applications. You will be involved in various aspects of the software development lifecycle.",
+        "req_experience": 4,
+        "req_skills": ["C#", "JavaScript", "AWS", "MongoDB", "Git"]
+    },
+    {
+        "job_id": "ijk456",
+        "job_title": "Frontend Developer",
+        "desc": "We are looking for a frontend developer to create beautiful and responsive user interfaces. You will be responsible for implementing visual elements that users see and interact with.",
+        "req_experience": 3,
+        "req_skills": ["HTML", "CSS", "React", "Firebase", "Webpack"]
+    },
+    {
+        "job_id": "lmn789",
+        "job_title": "Backend Developer",
+        "desc": "We are hiring a backend developer to build server-side applications and databases. You will be responsible for integrating the frontend elements built by your co-workers into the application.",
+        "req_experience": 6,
+        "req_skills": ["Node.js", "Python", "AWS", "MySQL", "Docker"]
+    },
+    {
+        "job_id": "opq012",
+        "job_title": "Machine Learning Engineer",
+        "desc": "We are seeking a machine learning engineer to develop machine learning models and algorithms. You will work closely with the data science team to turn data into actionable insights.",
+        "req_experience": 8,
+        "req_skills": ["Python", "TensorFlow", "PyTorch", "AWS", "Kubernetes"]
+    },
+    {
+        "job_id": "rst345",
+        "job_title": "Product Manager",
+        "desc": "We are looking for a product manager to guide the success of a product and lead the cross-functional team that is responsible for improving it. You will work closely with various teams.",
+        "req_experience": 10,
+        "req_skills": ["Market Research", "Product Development", "Project Management", "Data Analysis", "UX/UI Design"]
+    },
+    {
+        "job_id": "uvw678",
+        "job_title": "Business Analyst",
+        "desc": "We are hiring a business analyst to analyze business processes within the organization and recommend improvements. You will work closely with stakeholders to gather and document requirements.",
+        "req_experience": 5,
+        "req_skills": ["Data Analysis", "Process Mapping", "Requirement Gathering", "SQL", "Excel"]
+    },
+    {
+        "job_id": "xyz901",
+        "job_title": "Network Engineer",
+        "desc": "We are seeking a network engineer to design, implement, and manage our company's networks. You will be responsible for ensuring the stability and integrity of in-house voice, data, video, and wireless network services.",
+        "req_experience": 7,
+        "req_skills": ["Cisco", "LAN/WAN", "Firewalls", "VPN", "Network Security"]
+    },
+    {
+        "job_id": "abc234",
+        "job_title": "Technical Support Specialist",
+        "desc": "We are looking for a technical support specialist to provide technical assistance to our clients. You will help install, upgrade, and troubleshoot hardware and software systems.",
+        "req_experience": 3,
+        "req_skills": ["Troubleshooting", "Customer Service", "Operating Systems", "Network Protocols", "Remote Desktop"]
+    },
+    {
+        "job_id": "def567",
+        "job_title": "UI Developer",
+        "desc": "We are hiring a UI developer to design and implement user interfaces for websites and applications. You will work closely with the UX/UI designers and bridge the gap between graphical design and technical implementation.",
+        "req_experience": 4,
+        "req_skills": ["HTML", "CSS", "JavaScript", "React", "Redux"]
+    },
+    {
+        "job_id": "ghi890",
+        "job_title": "Database Developer",
+        "desc": "We are looking for a database developer to design stable and reliable databases, according to our company’s needs. You will be responsible for developing, testing, and deploying database solutions.",
+        "req_experience": 6,
+        "req_skills": ["SQL", "Database Design", "Data Modeling", "PL/SQL", "Oracle"]
+    },
+    {
+        "job_id": "jkl123",
+        "job_title": "Scrum Master",
+        "desc": "We are seeking a Scrum Master to facilitate Agile development teams. You will be responsible for creating an environment of mutual influence where everyone can contribute to the success of the team.",
+        "req_experience": 8,
+        "req_skills": ["Agile Methodologies", "Scrum", "Kanban", "JIRA", "Collaboration"]
+    },
+    {
+        "job_id": "mno456",
+        "job_title": "IT Project Manager",
+        "desc": "We are hiring an IT project manager to oversee the planning, implementation, and tracking of IT projects. You will work closely with clients and internal teams to deliver high-quality projects on time and within budget.",
+        "req_experience": 10,
+        "req_skills": ["Project Management", "Risk Management", "Resource Management", "Stakeholder Management", "Budgeting"]
+    },
+    {
+        "job_id": "pqr789",
+        "job_title": "Technical Writer",
+        "desc": "We are looking for a technical writer to create clear and concise documentation for various technical materials. You will work closely with technical experts to understand complex information and translate it into user-friendly documents.",
+        "req_experience": 5,
+        "req_skills": ["Technical Writing", "Research", "Editing", "Adobe FrameMaker", "MS Word"]
+    },
+    {
+        "job_id": "stu012",
+        "job_title": "System Administrator",
+        "desc": "We are seeking a system administrator to maintain, upgrade, and manage our software, hardware, and networks. You will be responsible for troubleshooting issues and ensuring security and efficiency of IT infrastructure.",
+        "req_experience": 7,
+        "req_skills": ["Linux", "Windows Server", "Network Security", "Virtualization", "Shell Scripting"]
+    },
+    {
+        "job_id": "vwx345",
+        "job_title": "UX Researcher",
+        "desc": "We are hiring a UX researcher to understand user needs, behaviors, and attitudes. You will be responsible for conducting qualitative and quantitative research to help design and improve user experiences.",
+        "req_experience": 4,
+        "req_skills": ["User Research", "Usability Testing", "Survey Design", "Data Analysis", "Human-Computer Interaction"]
+    },
+    {
+        "job_id": "yzb678",
+        "job_title": "Data Analyst",
+        "desc": "We are looking for a data analyst to interpret data and turn it into information that can offer ways to improve business decisions. You will gather information from various sources and interpret patterns and trends.",
+        "req_experience": 3,
+        "req_skills": ["Data Analysis", "Excel", "SQL", "Data Visualization", "Statistical Analysis"]
+    },
+    {
+        "job_id": "cde901",
+        "job_title": "Content Marketing Specialist",
+        "desc": "We are seeking a content marketing specialist to create and distribute valuable, relevant, and consistent content to attract and engage a clearly defined audience. You will drive brand awareness and lead generation through content marketing strategies.",
+        "req_experience": 4,
+        "req_skills": ["Content Creation", "SEO", "Social Media Marketing", "Email Marketing", "Analytics"]
+    },
+    {
+        "job_id": "fgh234",
+        "job_title": "Sales Engineer",
+        "desc": "We are hiring a sales engineer to sell complex scientific and technological products or services to businesses. You will use technical knowledge to sell the product/service to customers and support sales and marketing efforts.",
+        "req_experience": 6,
+        "req_skills": ["Technical Sales", "Product Knowledge", "Customer Engagement", "Presentation Skills", "Negotiation"]
+    },
+    {
+        "job_id": "ijk567",
+        "job_title": "AI Engineer",
+        "desc": "We are looking for an AI engineer to design and develop intelligent systems and applications. You will be responsible for creating machine learning models and algorithms.",
+        "req_experience": 5,
+        "req_skills": ["Machine Learning", "Python", "TensorFlow", "Natural Language Processing", "AI Algorithms"]
+    },
+    {
+        "job_id": "lmn890",
+        "job_title": "Product Owner",
+        "desc": "We are seeking a product owner to define and prioritize product features. You will collaborate with cross-functional teams and customers to ensure product requirements are well-defined and delivered.",
+        "req_experience": 7,
+        "req_skills": ["Product Management", "Scrum", "Agile Methodologies", "Requirement Analysis", "Stakeholder Management"]
+    },
+    {
+        "job_id": "opq123",
+        "job_title": "AI Research Scientist",
+        "desc": "We are hiring an AI research scientist to develop innovative algorithms and machine learning models. You will conduct research and experiments to advance the field of artificial intelligence.",
+        "req_experience": 8,
+        "req_skills": ["Machine Learning", "Deep Learning", "Python", "Research Methodologies", "Algorithm Development"]
+    },
+    {
+        "job_id": "rst456",
+        "job_title": "Quality Assurance Analyst",
+        "desc": "We are looking for a quality assurance analyst to develop and execute exploratory and automated tests to ensure product quality. The QA analyst role plays an important part in our company’s product development process.",
+        "req_experience": 4,
+        "req_skills": ["Software Testing", "Test Automation", "Bug Tracking", "Regression Testing", "Quality Assurance"]
+    },
+    {
+        "job_id": "uvw789",
+        "job_title": "Solutions Architect",
+        "desc": "We are hiring a solutions architect to design and implement information systems to support the enterprise infrastructure of an organization. You will provide technical leadership and architectural guidance.",
+        "req_experience": 9,
+        "req_skills": ["System Architecture", "Cloud Computing", "Enterprise Integration", "Technical Leadership", "Problem Solving"]
+    },
+    {
+        "job_id": "xyz012",
+        "job_title": "Bioinformatics Scientist",
+        "desc": "We are seeking a bioinformatics scientist to analyze and interpret biological data using computational techniques. You will work with biological data to discover insights and support scientific research.",
+        "req_experience": 6,
+        "req_skills": ["Bioinformatics", "Computational Biology", "Genomics", "Data Analysis", "Programming (e.g., R, Python)"]
+    },
+    {
+        "job_id": "abc345",
+        "job_title": "Blockchain Developer",
+        "desc": "We are looking for a blockchain developer to design, implement, and support a distributed blockchain-based network. You will work on developing blockchain protocols, smart contracts, and decentralized applications.",
+        "req_experience": 5,
+        "req_skills": ["Blockchain Development", "Smart Contracts", "Cryptocurrency", "Distributed Ledger Technology", "Solidity"]
+    },
+    {
+        "job_id": "def678",
+        "job_title": "Game Developer",
+        "desc": "We are hiring a game developer to create engaging and immersive games for various platforms. You will be responsible for designing, coding, and testing game software.",
+        "req_experience": 3,
+        "req_skills": ["Game Development", "Unity", "C#", "Game Design", "3D Modeling"]
+    },
+    {
+        "job_id": "ghi901",
+        "job_title": "AR/VR Developer",
+        "desc": "We are looking for an AR/VR developer to create interactive experiences using augmented and virtual reality technologies. You will work on developing applications for a variety of industries.",
+        "req_experience": 4,
+        "req_skills": ["Augmented Reality", "Virtual Reality", "Unity", "C#", "3D Modeling"]
+    },
+    {
+        "job_id": "jkl234",
+        "job_title": "Ethical Hacker",
+        "desc": "We are seeking an ethical hacker to assess and analyze vulnerabilities in computer systems. You will use penetration testing techniques to identify security weaknesses and recommend solutions.",
+        "req_experience": 6,
+        "req_skills": ["Ethical Hacking", "Penetration Testing", "Network Security", "Security Assessment", "Cybersecurity Tools"]
+    },
+    {
+        "job_id": "mno567",
+        "job_title": "GIS Analyst",
+        "desc": "We are hiring a GIS analyst to analyze and interpret geographic information using various spatial analysis methods. You will work with geographic data and create maps and visualizations.",
+        "req_experience": 4,
+        "req_skills": ["Geographic Information Systems", "Spatial Analysis", "Cartography", "Data Visualization", "GIS Software (e.g., ArcGIS)"]
+    },
+    {
+        "job_id": "pqr890",
+        "job_title": "IT Consultant",
+        "desc": "We are looking for an IT consultant to provide expert advice on technology solutions to businesses. You will assess the client's business, technology, and processes to recommend improvements.",
+        "req_experience": 8,
+        "req_skills": ["IT Strategy", "Business Analysis", "Project Management", "Vendor Management", "Enterprise Architecture"]
+    },
+    {
+        "job_id": "stu123",
+        "job_title": "Robotic Process Automation Developer",
+        "desc": "We are seeking an RPA developer to design, develop, and deploy software robots that automate repetitive tasks. You will work with clients to identify processes suitable for automation.",
+        "req_experience": 5,
+        "req_skills": ["Robotic Process Automation", "RPA Tools (e.g., UiPath, Automation Anywhere)", "Process Automation", "Programming (e.g., Python)", "Problem-Solving"]
+    },
+    {
+        "job_id": "vwx456",
+        "job_title": "Cloud Security Engineer",
+        "desc": "We are hiring a cloud security engineer to implement and maintain cloud security solutions. You will work with cloud service providers to ensure the security of cloud environments.",
+        "req_experience": 7,
+        "req_skills": ["Cloud Security", "Identity and Access Management", "Security Compliance", "Encryption", "Intrusion Detection Systems"]
+    },
+    {
+        "job_id": "yzb789",
+        "job_title": "UI/UX Developer",
+        "desc": "We are looking for a UI/UX developer to create visually appealing and intuitive user interfaces. You will collaborate with designers to implement responsive and interactive designs.",
+        "req_experience": 4,
+        "req_skills": ["HTML", "CSS", "JavaScript", "React", "UI/UX Design"]
+    },
+    {
+        "job_id": "cde012",
+        "job_title": "Big Data Engineer",
+        "desc": "We are seeking a big data engineer to design, develop, and maintain scalable and distributed data processing systems. You will work with large datasets and implement data pipelines.",
+        "req_experience": 6,
+        "req_skills": ["Big Data Technologies (e.g., Hadoop, Spark)", "Data Warehousing", "ETL Processes", "Data Modeling", "NoSQL Databases"]
+    },
+    {
+        "job_id": "fgh345",
+        "job_title": "Bioinformatics Analyst",
+        "desc": "We are looking for a bioinformatics analyst to analyze biological data and develop computational tools. You will work with biological datasets to support scientific research.",
+        "req_experience": 3,
+        "req_skills": ["Bioinformatics", "Computational Biology", "Data Analysis", "Programming (e.g., R, Python)", "Genomics"]
+    },
+    {
+        "job_id": "ijk678",
+        "job_title": "Cloud Engineer",
+        "desc": "We are hiring a cloud engineer to design and implement cloud services for our organization. You will work with various cloud platforms to optimize performance and security.",
+        "req_experience": 5,
+        "req_skills": ["Cloud Platforms (e.g., AWS, Azure, Google Cloud)", "Networking", "Security", "Cloud Migration", "Scripting (e.g., Python)"]
+    },
+    {
+        "job_id": "lmn901",
+        "job_title": "Bioinformatics Scientist",
+        "desc": "We are seeking a bioinformatics scientist to develop algorithms and computational tools for biological research. You will work with biological data and contribute to scientific discoveries.",
+        "req_experience": 7,
+        "req_skills": ["Bioinformatics", "Computational Biology", "Algorithm Development", "Data Analysis", "Programming (e.g., R, Python)"]
     }
 ]
