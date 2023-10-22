@@ -1,0 +1,72 @@
+[
+    {
+        "job_id": "abc123",
+        "job_title": "Software Developer",
+        "desc": "We are looking for a skilled software developer to join our team. The ideal candidate will have experience in developing high-quality software solutions.",
+        "req_experience": 5,
+        "req_skills": ["Java", "Python", "AWS", "MySQL", "Git"]
+    },
+    {
+        "job_id": "def456",
+        "job_title": "Full Stack Developer",
+        "desc": "We are seeking a talented full stack developer to design and implement functional and attractive websites and applications. You will be responsible for both front-end and back-end development.",
+        "req_experience": 7,
+        "req_skills": ["JavaScript", "Ruby", "Azure", "MongoDB", "Docker"]
+    },
+    {
+        "job_id": "ghi789",
+        "job_title": "DevOps Engineer",
+        "desc": "We are hiring a DevOps engineer to help us build functional systems that improve customer experience. You will manage infrastructure projects and processes.",
+        "req_experience": 9,
+        "req_skills": ["Bash", "Go", "Google Cloud", "PostgreSQL", "Kubernetes"]
+    },
+    {
+        "job_id": "jkl012",
+        "job_title": "UI/UX Designer",
+        "desc": "We are looking for a UI/UX designer to turn our software into easy-to-use products for our clients. You will be responsible for enhancing user satisfaction by improving the usability and accessibility of our software.",
+        "req_experience": 6,
+        "req_skills": ["HTML", "CSS", "Firebase", "SQLite", "Figma"]
+    },
+    {
+        "job_id": "mno345",
+        "job_title": "Data Scientist",
+        "desc": "We are seeking a data scientist to join our data team. You will be responsible for developing and implementing various machine learning algorithms for predictive and prescriptive analytics.",
+        "req_experience": 8,
+        "req_skills": ["R", "Python", "AWS", "Oracle", "TensorFlow"]
+    },
+    {
+        "job_id": "pqr678",
+        "job_title": "Cybersecurity Analyst",
+        "desc": "We are hiring a cybersecurity analyst to implement and maintain security measures to protect our computer systems and networks. You will be responsible for preventing and detecting cyber threats.",
+        "req_experience": 7,
+        "req_skills": ["C", "C++", "Azure", "SQL Server", "Wireshark"]
+    },
+    {
+        "job_id": "stu901",
+        "job_title": "Mobile App Developer",
+        "desc": "We are looking for a mobile app developer to lead the design, development, and maintenance of Android and iOS apps. The developer will lead the entire app lifecycle right from concept stage until delivery and post-launch support.",
+        "req_experience": 6,
+        "req_skills": ["Java", "Swift", "Firebase", "Realm", "Xcode"]
+    },
+    {
+        "job_id": "vwx234",
+        "job_title": "Cloud Solutions Architect",
+        "desc": "We are seeking a cloud solutions architect to lead the design and implementation of our cloud services. You will work closely with clients and internal teams to develop cloud-based solutions.",
+        "req_experience": 10,
+        "req_skills": ["JavaScript", "Python", "AWS", "DynamoDB", "Terraform"]
+    },
+    {
+        "job_id": "yzab567",
+        "job_title": "Database Administrator",
+        "desc": "We are hiring a database administrator to ensure the performance, availability, and security of databases. You will be responsible for planning, monitoring, and improving the performance of databases.",
+        "req_experience": 8,
+        "req_skills": ["SQL", "PL/SQL", "Azure", "SQL Server", "Oracle Enterprise Manager"]
+    },
+    {
+        "job_id": "cde890",
+        "job_title": "QA Engineer",
+        "desc": "We are looking for a QA engineer to develop and execute exploratory and automated tests to ensure product quality. The QA engineer role plays an important part in our company’s product development process.",
+        "req_experience": 5,
+        "req_skills": ["Java", "Python", "Google Cloud", "MySQL", "Selenium"]
+    }
+]
