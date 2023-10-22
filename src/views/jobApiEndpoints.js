@@ -31,7 +31,7 @@ const auth = (req, res, next) => {
 
 
 router.post('/job', auth, (req, res) => {
-  // ... (same as previous implementation)
+  // 
 });
 
 router.get('/listofjobs', auth, (req, res) => {
@@ -53,6 +53,16 @@ router.get('/relatedJobs',auth,(req,res)=>{
   return res.status(jobResult.http_code).json(jobResult)})
  .catch(() => res.status(500).send('Error fetching jobs.'));
 
+})
+
+router.post('/jobApply',auth,(req,res)=>{
+
+   const {jobid,userid}= req.body;
+  jobService.applyFindedJobs(jobid,userid)
+  .then((jobResult) =>{ 
+    return res.status(jobResult.http_code).json(jobResult)})
+   .catch(() => res.status(500).send('Error while applying.'));
+  
 })
 
 module.exports = router;
