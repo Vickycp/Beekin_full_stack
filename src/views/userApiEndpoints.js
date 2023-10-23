@@ -3,7 +3,7 @@ const express = require('express');
 const basicAuth = require('basic-auth');
 const router = express.Router();
 const userService = require('../services/userService');
-
+const cors=require('cors')
 
 // Basic Authentication Middleware
 const auth = (req, res, next) => {
@@ -25,15 +25,13 @@ const auth = (req, res, next) => {
     .catch(() => res.status(401).send('Authentication failed.'));
 };
 
-router.post('/createUser', (req, res) => {
-  console.log("888888888888888888")
-  const { username, password,age,experience,useremail, gender,skill } = req.body;
+router.post('/createUser', cors(),(req, res) => {
+   const { username, password,age,experience,useremail, gender,skill } = req.body;
   
   // Validate if username and password are present in the request body
   if (!username || !password) {
     return res.status(400).send('Username and password are required.');
   }
-
   const listofSkill= skill.split(',').map(skill => skill.trim());
   userService
     .saveUser(username, password,age,experience,useremail,gender,listofSkill)
@@ -45,7 +43,7 @@ router.post('/createUser', (req, res) => {
 
 
 router.get('/userLogin',auth, (req, res) => {
-  
+    console.log("request foun") 
     const {useremail,password}= req.body;
     userService.checkUserLogin(useremail,password)
     .then((responseData) =>{ 
