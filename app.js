@@ -2,13 +2,14 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const cors = require('cors'); 
 const jobApiEndpoints = require('./src/views/jobApiEndpoints');
 const userApiEndpoints = require('./src/views/userApiEndpoints');
-const cors=require('cors')
-
 // Initialize Express app
 const app = express();
 app.use(bodyParser.json());
+app.use(express.json());
+
 
 // MongoDB Connection
 mongoose.connect('mongodb://localhost:27017/jobportal', {
@@ -16,9 +17,17 @@ mongoose.connect('mongodb://localhost:27017/jobportal', {
   useUnifiedTopology: true,
 });
 
+app.use(function(req, res, next) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  res.setHeader('Access-Control-Allow-Credentials', false);
+  next();
+});
+
 // API Endpoints
 app.use('/job', jobApiEndpoints);
-app.use('/user',cors(), userApiEndpoints);
+app.use('/user', userApiEndpoints);
 
 
 // Start server

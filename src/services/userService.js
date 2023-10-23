@@ -5,18 +5,11 @@ const userService = {
 
     
   saveUser: (username, password,age,experience,useremail, gender,skill) => {
-      
-    console.log(username+''+password+''+age+''+experience+''+useremail+''+gender+''+skill);
-
-    return userPresenter.saveUser(username, password,age,experience, useremail,gender,skill);
+      return userPresenter.saveUser(username, password,age,experience, useremail,gender,skill);
   },
 
   getUserByEmail: (email) => {
-
-    console.log('**user email:**'+email+'*****');
-
- 
-    return userPresenter.getuserByEmail(email);
+ return userPresenter.getuserByEmail(email);
   },
 
 
